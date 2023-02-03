@@ -1,0 +1,6 @@
+services:
+
+  anuncios:
+    image: docker.io/maes95/anuncios:latest
+    ports:
+      - 8080:8080
