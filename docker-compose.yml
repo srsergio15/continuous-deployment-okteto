@@ -1,6 +1,5 @@
 services:
-
   anuncios:
-    image: docker.io/maes95/anuncios:latest
+    image: maes95/okteto-anuncios:0.0.1-SNAPSHOT
     ports:
       - 8080:8080

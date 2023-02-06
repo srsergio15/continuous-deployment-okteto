@@ -16,6 +16,7 @@
 	</parent>
 
 	<properties>
+		<dockerhub.user>maes95</dockerhub.user>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>17</java.version>
 		<selenium.version>4.8.0</selenium.version>
@@ -68,6 +69,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>${dockerhub.user}/${project.artifactId}:${project.version}</name>
+					</image>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
