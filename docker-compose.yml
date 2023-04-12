@@ -1,5 +1,5 @@
 services:
   anuncios:
-    image: maes95/okteto-anuncios:0.0.1-SNAPSHOT
+    image: srsergio15/okteto-anuncios:0.0.1-SNAPSHOT
     ports:
       - 8080:8080
